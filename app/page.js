@@ -16,14 +16,16 @@ export default function Home() {
     <>
       <header className="flex justify-between items-center px-8 py-2 bg-slate-900   w-full ">
         <Link href="/">
-          <Image src="rabbit-logo.svg" width={200} height={50} alt="logo" />
+          <Image src="rabbit-logo.svg" width={100} height={50} alt="logo" />
         </Link>
         <nav>
           <Link href="/signup">
-            <button className=" mr-4 capitalize"> sign up</button>
+            <button className=" mr-4 capitalize text-sm md:text-base">
+              sign up
+            </button>
           </Link>
           <Link href="/login">
-            <button className="outline px-4 py-2 rounded-sm capitalize hover:bg-white hover:text-slate-900">
+            <button className="outline px-4 py-2 rounded-sm capitalize hover:bg-white hover:text-slate-900 text-sm md:text-base">
               login
             </button>
           </Link>
@@ -31,18 +33,20 @@ export default function Home() {
       </header>
       <section className="">
         <div className="bg-[url('/business-man-working-late-office.jpg')] bg-cover h-[600px] flex flex-col items-center justify-center">
-          <h2 className="text-7xl capitalize">find the career you deserve</h2>
-          <p className="text-lg pt-8 pb-8 capitalize">
+          <h2 className="text-2xl md:text-7xl capitalize">
+            find the career you deserve
+          </h2>
+          <p className="text-sm md:text-lg pt-8 pb-8 capitalize">
             your job search starts and ends with us.
           </p>
-          <button className="px-8 py-4 outline outline-blue-600 bg-blue-600 hover:bg-transparent  uppercase rounded-md ">
+          <button className="px-4 py-2 md:px-8 md:py-4 outline outline-blue-600 bg-blue-600 hover:bg-transparent  uppercase rounded-md ">
             see our curated jobs
           </button>
         </div>
       </section>
       <section className="bg-white pt-8 text-slate-600">
         <h1 className="capitalize  text-3xl text-center">featured jobs</h1>
-        <div className="flex px-12 pt-4 justify-center">
+        <div className="md:flex md:px-12 md:pt-4 md:justify-center">
           {jobs.map((job) => (
             <JobCard
               key={job.id}
@@ -61,7 +65,7 @@ export default function Home() {
         <h1 className="capitalize  text-3xl text-center">
           featured candidates
         </h1>
-        <div className="flex px-12 pt-4 justify-center">
+        <div className="md:flex md:px-12 py-8 md:justify-center mx-auto">
           {candidates.map((candidate) => (
             <CandidateCard
               key={candidate.id}
@@ -97,9 +101,9 @@ export default function Home() {
           contact us
         </button>
       </section>
-      <footer className="bg-white text-slate-900 py-8 px-16 flex justify-between">
+      <footer className="bg-white text-slate-900 py-8 px-16 md:flex md:justify-between">
         <div>© 2024 — ALL RIGHTS RESERVED</div>
-        <ul className="flex gap-8">
+        <ul className="py-4 flex gap-8">
           <li>
             <FaFacebook />
           </li>
@@ -129,7 +133,7 @@ export default function Home() {
 
 const JobCard = ({ imgUrl, link, title, location, type, description }) => {
   return (
-    <article className="text-slate-900 w-96 shadow-md m-4 rounded-bl-md rounded-br-md">
+    <article className="text-slate-900 shadow-md m-4 rounded-bl-md rounded-br-md">
       <Link href={link}>
         <Image
           alt="job description"
