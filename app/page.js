@@ -139,7 +139,7 @@ const JobCard = ({ imgUrl, link, title, location, type, description }) => {
           alt="job description"
           className="rounded-tr-md rounded-tl-md"
           src={`/` + imgUrl}
-          width={300}
+          width={400}
           height={200}
         />
       </Link>
@@ -172,8 +172,8 @@ const CandidateCard = ({ imgUrl, name, description, location, url }) => {
           alt="candidate image"
           className="rounded-tr-md rounded-tl-md"
           src={`/` + imgUrl}
-          width={512}
-          height={512}
+          width={400}
+          height={200}
         />
       </Link>
       <div className="p-4 ">
