@@ -139,7 +139,7 @@ const JobCard = ({ imgUrl, link, title, location, type, description }) => {
           alt="job description"
           className="rounded-tr-md rounded-tl-md"
           src={`/` + imgUrl}
-          width={400}
+          width={300}
           height={200}
         />
       </Link>
