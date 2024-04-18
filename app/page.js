@@ -166,14 +166,16 @@ const JobCard = ({ imgUrl, link, title, location, type, description }) => {
 
 const CandidateCard = ({ imgUrl, name, description, location, url }) => {
   return (
-    <article className="text-slate-900 w-96 shadow-md m-4 rounded-bl-md rounded-br-md">
+    <article className="text-slate-900 shadow-md m-4 rounded-bl-md rounded-br-md">
       <Link href={url}>
         <Image
           alt="candidate image"
           className="rounded-tr-md rounded-tl-md"
           src={`/` + imgUrl}
-          width={400}
-          height={200}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
         />
       </Link>
       <div className="p-4 ">
