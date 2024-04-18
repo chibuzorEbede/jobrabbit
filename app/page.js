@@ -76,11 +76,11 @@ export default function Home() {
       </section>
       <section className="bg-white pt-10 text-slate-600">
         <h1 className="capitalize  text-3xl text-center">
-          Companies We've Helped
+          Companies We&apos;ve Helped
         </h1>
         <p className="text-center pt-4 text-lg">
-          Some of the companies we've helped recruit excellent applicants over
-          the years.
+          Some of the companies we&apos;ve helped recruit excellent applicants
+          over the years.
         </p>
         <div className="flex px-12 pt-4 justify-center">
           <CompaniesCard />
@@ -91,8 +91,7 @@ export default function Home() {
       <section className="bg-[url('/business-man-working-late-office.jpg')] pt-10 text-slate-600 h-96 text-center">
         <h1 className="capitalize  text-3xl pb-4">Got a Question?</h1>
         <p className=" py-8 text-lg">
-          We’re here to help. Check out our FAQs, send us an email or call us at
-          1 (800) 555-5555
+          We’re here to help. Send us an email or call us at +234-8100-208-***
         </p>
         <button className="text-white px-8 py-4 outline outline-blue-600 bg-blue-600 hover:bg-transparent  uppercase rounded-md">
           contact us
