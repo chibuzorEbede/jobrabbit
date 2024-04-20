@@ -35,7 +35,7 @@ const candidates = [
     id: 1,
     url: "s",
     imgUrl: "candidate.png",
-    name: "Amanda Cook",
+    name: "Jerry Cook",
     location: "California",
     description:
       "Spent several years working on sheep on Wall Street. Had moderate success investing in Yugos on Wall Street.",
@@ -44,7 +44,7 @@ const candidates = [
     id: 2,
     url: "c",
     imgUrl: "candidate.png",
-    name: "Amanda Cook",
+    name: "Amanda Rice",
     location: "California",
     description:
       "Spent several years working on sheep on Wall Street. Had moderate success investing in Yugos on Wall Street.",
@@ -53,7 +53,7 @@ const candidates = [
     id: 3,
     url: "d",
     imgUrl: "candidate.png",
-    name: "Amanda Cook",
+    name: "Fred Beans",
     location: "California",
     description:
       "Spent several years working on sheep on Wall Street. Had moderate success investing in Yugos on Wall Street.",
