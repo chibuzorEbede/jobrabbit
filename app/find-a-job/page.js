@@ -55,6 +55,7 @@ function JobSearchForm() {
       <JobList>
         {apiJob.map((job) => (
           <JobTile
+            key={crypto.randomUUID()}
             imgUrl={job.imgUrl}
             jobTitle={job.jobTitle}
             employerName={job.employerName}
