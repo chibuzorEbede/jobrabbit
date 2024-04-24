@@ -12,7 +12,7 @@ export default function Login() {
         </div>
         <form className="flex flex-col gap-6">
           <TextInput label={"username or email"} type={"email"} />
-          <TextInput label={"password"} type={"text"} />
+          <TextInput label={"password"} type={"password"} />
 
           <Button text={"login"}></Button>
         </form>
