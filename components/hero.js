@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Button from "./ui/button";
 export default function Hero() {
   return (
     <section className="">
@@ -10,9 +11,7 @@ export default function Hero() {
           your job search starts and ends with us.
         </p>
         <Link href="/find-a-job">
-          <button className="px-4 py-2 md:px-8 md:py-4 outline outline-blue-600 bg-blue-600 hover:bg-transparent  uppercase rounded-md ">
-            see our curated jobs
-          </button>
+          <Button text={"see our curated jobs"} />
         </Link>
       </div>
     </section>

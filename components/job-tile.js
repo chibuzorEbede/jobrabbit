@@ -12,8 +12,8 @@ export default function JobTile({
 }) {
   return (
     <Link href={jobUrl}>
-      <article className="flex md:flex gap-4  shadow-sm border p-2">
-        <div className="min-w-[100px]">
+      <article className="flex gap-4 shadow-sm border p-2">
+        <div className="min-w-[100px] min-h-[100px] ">
           <Image
             className=""
             src={imgUrl}
@@ -23,24 +23,26 @@ export default function JobTile({
           />
         </div>
 
-        <div className="md:flex gap-4 md:gap-24 items-center md:justify-around md:px-8 ">
-          <div className="">
-            <p className="text-xl md:text-lg md:capitalize uppercase text-slate-700 ">
+        <aside className="md:flex-auto md:flex md:gap-8 md:justify-between">
+          <div className="md:w-[40%]">
+            <p className="text-xl md:text-lg md:capitalize uppercase font-medium text-slate-700 ">
               {jobTitle}
             </p>
-            <p className="text-sm font-medium mt-1 md:mt-0">{employerName}</p>
+            <p className="text-sm font-medium mt-1 text-slate-700 md:mt-0">
+              {employerName}
+            </p>
           </div>
-          <div className="flex items-center pt-2 md:pt-0">
+          <div className="flex items-center pt-2 md:pt-0 md:w-[30%]">
             <FaLocationDot />
             <p className="capitalize ml-2 text-slate-700">{jobLocation}</p>
           </div>
-          <div className="mt-4 md:mt-0">
-            <p className="p-2 bg-green-700 inline md:block md:text-center text-white text-xs uppercase rounded-md">
+          <div className="mt-4 md:mt-0 md:w-[30%]">
+            <p className="p-1 bg-green-700 inline md:inline-block md:text-center text-white text-xs uppercase rounded-md">
               {employmentType}
             </p>
-            <p className="mt-2 text-slate-500 md:text-center ">{jobPostDate}</p>
+            <p className="mt-2 text-slate-500  ">{jobPostDate}</p>
           </div>
-        </div>
+        </aside>
       </article>
     </Link>
   );

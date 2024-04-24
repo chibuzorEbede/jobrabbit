@@ -1,20 +1,20 @@
 import Button from "@/components/ui/button";
 import TextInput from "@/components/ui/text-input";
 
-export default function Login() {
+export default function Signup() {
   return (
-    <main className="bg-white  flex  justify-center items-center px-2 py-8">
+    <main className="bg-white  flex justify-center items-center px-2 py-8">
       <div className="shadow-md p-4 border md:min-w-[40%]">
         <div className="">
           <h1 className="text-xl capitalize mb-4 text-slate-600 font-medium">
-            login
+            sign up
           </h1>
         </div>
         <form className="flex flex-col gap-6">
-          <TextInput label={"username or email"} type={"email"} />
-          <TextInput label={"password"} type={"text"} />
-
-          <Button text={"login"}></Button>
+          <TextInput label={"first name"} type={"text"} />
+          <TextInput label={"last name"} type={"text"} />
+          <TextInput label={"email "} type={"email"} />
+          <Button text={"register"}></Button>
         </form>
       </div>
     </main>

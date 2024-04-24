@@ -95,7 +95,7 @@ const jsonData = [
     job_publisher: "LinkedIn",
     job_id: "8yv3oA_2-UYAAAAAAAAAAA==",
     job_employment_type: "CONTRACTOR",
-    job_title: "Web Developer - 6-month Contract - Houston Hybrid",
+    job_title: "Web Developer ",
     job_apply_link:
       "https://www.linkedin.com/jobs/view/web-developer-6-month-contract-houston-hybrid-at-dice-3624857671",
     job_apply_is_direct: false,
